@@ -1,0 +1,9 @@
+- new_journal.zip - журнал на новом ноуте с 5 октября 2023
+- делаем с него копию import_journal.zip
+- import_journal.zip - журнал который надо импортировать, копия new_journal.zip куда добавляют старый журнал
+- Journal Backup 2024-01-05 (1704458283).zip - старый журнал
+- Journal_dayone - распакованный старый журнал
+- go run main.go генерит import_journal/Journal.json по старому журналу
+- добавляем в сгенеренный json новый журнал (распаковать new_journal.zip, вытащить Journal.json и добавить в import_journal/Journal.json)
+- cd import_journal && zip ../import_journal.zip Journal.json
+- cd Journal_dayone && zip ../import_journal.zip photos/*
